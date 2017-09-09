@@ -1,4 +1,4 @@
-package com.b1ngoos.task3;
+package com.b1ngoos.money_money_money;
 
 public class Money {
 

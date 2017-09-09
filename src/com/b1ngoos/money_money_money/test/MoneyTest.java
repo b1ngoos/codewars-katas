@@ -1,6 +1,6 @@
-package com.b1ngoos.task3.test;
+package com.b1ngoos.money_money_money.test;
 
-import com.b1ngoos.task3.Money;
+import com.b1ngoos.money_money_money.Money;
 import org.junit.Assert;
 
 import static org.junit.Assert.*;

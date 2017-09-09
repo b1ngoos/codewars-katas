@@ -1,6 +1,6 @@
-package com.b1ngoos.task2;
+package com.b1ngoos.consecutive_strings;
 
-public class Main {
+public class LongestConsec {
 
     public static void main(String[] args) {
         System.out.println(longestConsec(new String[]{"it","wkppv","ixoyx", "3452", "zzzzzzzzzzzz"}, 3));
