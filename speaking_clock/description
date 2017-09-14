@@ -1,0 +1,45 @@
+For a simple watch face we want the current time spelled out in english. Write a function getTimeText(hour, minute) (or get_time_text(cls, h, m) for Python) that takes the time as two integers and returns the spelled out time as written below.
+
+We would like the text to be simple to read, so we will round the current time to the next full 5 minutes (Definitely more convenient for the user than rounding down...). We will use a 12-hour clock (e.g. 13:00 is "one". For this particular clock we will not use "AM" and "PM", just the time (and let the user guess which half of the day it is ;-) )
+
+The time will be passed in a 24-hour format, and may contain (0, 0) as well as (24, 0).
+
+Examples
+
+Time	Expected String
+00:00	"midnight"
+12:01	"five past noon"
+01:05	"five past one"
+13:06	"ten past one"
+16:29	"half past four"
+22:34	"twenty-five to eleven"
+06:44	"quarter to seven"
+07:56	"eight"
+English time representation
+
+As a reminder for all who are not that familiar with english names for the time:
+
+During the first 30 minutes of an hour (m < 30), the time is measured from the current hour (m past h), afterwards we measure to the next hour (60-m to h). 00:00 is called midnight, 12:00 is called noon.
+
+Hour names:
+
+Hour	Name
+00:00	midnight
+01:00	one
+02:00	two
+...	...
+12:00	noon
+13:00	one
+14:00	two
+...	...
+24:00	midnight
+Minute names:
+
+Minute	Name
+xx:00	-
+xx:05	five
+xx:10	ten
+xx:15	quarter
+xx:20	twenty
+xx:25	twenty-five
+xx:30	half
